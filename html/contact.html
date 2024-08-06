@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elearning google form</title>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 14px;
+         background-color: black;
+    }
+    .container{
+        background-image: url("/image/pink.jpg");
+        background-size: cover;
+        width: 500px;
+        padding: 25px;
+        margin: 50px auto 0;
+        border-top: 5px solid blue;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    }
+    .container h2{
+        font-size: 24px;
+        line-height:24px;
+        padding: 30px;
+        align-items: center;
+    }
+    .input-name{
+        width: 400px;
+        position: relative;
+        margin: 20px auto;
+
+    }
+    .lock{
+        padding: 8px 3px;
+    }
+    .name{
+        width: 45%;
+        padding: 8px 0 8px 40px;
+    }
+   .input-name span{
+            margin-left:35px ;
+            
+    }
+    .text-name{
+        width: 100%;
+        padding: 8px 0 8px 40px;
+    }
+    .input-name i{
+        position: absolute;
+        font-size: 18px;
+        padding: 10px;
+        color: blue;
+        border-right: 1px solid#cccccc;
+    }
+    .email{
+        padding: 8px;
+
+    }
+    .text-name,.name{
+        border: 1px solid #cccccc;
+        outline: none;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
+    }
+    .text-name:hover, .name:hover{
+        background-color: #fafafa;
+    }
+    .text-name:focus, .name:focus{
+        border: 1px solid blue;
+    }
+    .radio-button{
+        margin-right: 4px;
+    }
+    .country{
+        display: inline-block;
+        width: 100%;
+        height: 35px;
+        padding: 0px 15px;
+        cursor: pointer;
+        border: 1px solid #cccccc;
+        color: #7b7b7b;
+        border-right: 0;
+        background: white;
+        appearance: none;
+      transition: all 0.2s ease;
+    }
+    .country::ms-expand{
+      display: none;
+    }
+    .country:hover,.country:focus{
+        color: blue;
+        background: #fafafa;
+        border-color: black;
+        outline: none;
+    }
+    .input-name .button{
+        width: 150px;
+        height:35px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        background-color: blue;
+        color: wheat;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form action="anshul.php" method="post">
+                
+                <div class="input-name">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="First Name" class="name" name="firstname">
+                    <span>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Last Name" class="name" name="lastname">
+                    </span>
+                </div>
+                  <div class="input-name">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <input type="email" placeholder="Email" class="name" name="email">
+                  </div>
+
+                  <div class="input-name">
+                  
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Password" class="name" name="password">
+                  </div>
+
+                  <div class="input-name">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                 
+                    <input type="password" placeholder="confirm password" class="name" name="confirmpassword">
+
+                    
+                  </div>
+                  <div class="input-name">
+                    <input type="radio" class="radio-button" name="r1" >
+                    <label>Male</label>
+                    <input type="radio" class="radio-button" name="r1">
+                    <label>Female</label>
+                  </div>
+
+                  <div class="input-name">
+                    <select class="country" name="country">
+                        <option>Select a country</option>
+                        <option>India</option>
+                        <option>Itely</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                        <option>Japan</option>
+                    </select>
+                    <div class="arrow"></div>
+
+                  </div>
+                  <div class="input-name">
+                    <input type="checkbox" class="check-button" name="cbutton">
+                    <label>I accept the terms and conditions</label>
+                  </div>
+                  <div class="input-name">
+                   <button class="button" name="submit">Register</button>
+                  </div>
+                  
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
+

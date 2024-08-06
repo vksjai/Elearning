@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logine page</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: wheat;
+            color: black;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: #f66962;
+            margin: 150px  auto;
+            border-radius: 20px;
+        }
+        .container h2{
+            font-size: 2.5;
+            padding-left: 165px;
+            padding-top: 25px;
+            color: black;
+        }
+        .page input{
+            font-size: 1.2rem;
+             height: 35px;
+             width:90%;
+             border: 2px solid black;
+             margin-top: 20px;
+             margin-left: 10px;
+             border-radius: 10px;
+             background-color: #e7ada4;
+             color: black;
+
+        }
+        .name{
+            color: black;
+        }
+         .vks{
+            background-color: wheat;
+            font-size: 1rem;
+            margin-left: 150px;
+            height: 25px;
+            width: 100px;
+            margin-top: 50px;
+            border-radius: 20px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h2>login</h2>
+        <div class="page">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="email" placeholder="Email" class="name">
+
+        </div>
+        <div class="page">
+            <i class="fa fa-lock lock"></i>
+            <input type="password" placeholder="Password" class="name">
+        </div>
+        <button class="vks">login</button>
+    </div>
+</body>
+</html>
